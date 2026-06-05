@@ -1,20 +1,3 @@
-"""
-APP13.py  —  FIR Intelligence System v3
-Udupi District FIR Analysis Assistant
-
-Architecture:
-  ResponseStyleDetector → QueryParser → IntentClassifier
-  → FIRAgent → [SQLiteManager | ChromaVectorStore | SarvamLLM]
-  → StreamlitChatUI
-
-Combines:
-  - APP12 rich 7-intent routing + chat UI + response style system
-  - First app backend transparency + expander debug visibility
-  - Correct DB schema (fir_cases with actual columns only)
-  - Sarvam API mode (no local HF model)
-  - Session-based chat + query history
-"""
-
 import json
 import os
 import re
